@@ -21,13 +21,7 @@ const sports = [
        
      },
 ]
-function fun(x){
-    console.log(x[0]);
-    console.log(x[1]);
-    console.log(x[2]);
-    console.log(x[3]);
-}
 sports.forEach((sport) => console.log(sport.name));
-sports.forEach((sport)=> fun(sport.someplayers));
+sports.forEach((sport) => sport.someplayers.forEach((player) => console.log(player)));
 const current = sports.filter((sport)=> sport.teams > 30);
 console.log(current);
